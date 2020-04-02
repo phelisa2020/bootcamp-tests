@@ -1,13 +1,13 @@
 describe('fromWhere function' , function(){
-    it('should returns the town the car is from (Bellville).' , function(){
+    it('should returns Bellville if the regNo plate starts with CA..' , function(){
     	var returns = 'Bellville';
       assert.equal(returns,fromWhere('CY'));
     });
-    it('should returns the town the car is from (Paarl).' , function(){
+    it('should returns the Paarl if the regNo plate starts with CJ.' , function(){
     	var returns ='Paarl';
       assert.equal(returns,fromWhere("CJ"));
     });
-    it('should returns the town the car is from (Cape Town).' , function(){
+    it('should returns Cape Town if the regNo plate starts with CA. .' , function(){
     	var returns ='Cape Town'
       assert.equal(returns,fromWhere('CA'));
     });
