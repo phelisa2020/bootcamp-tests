@@ -18,15 +18,6 @@ describe('findItemsOver' , function(){
       assert.deepEqual(itemList, findItemsOver(itemList, 0));
     });
 
-     it('should also return products even if its (-)number that have quantity higher than threshold.' , function(){
-    var itemList = [
-    // {name : 'apples', qty : 10},
-    // {name : 'pears', qty : 37},
-    {name : 'bananas', qty : 27},
+	     
 
-];
-      assert.deepEqual(itemList, findItemsOver(itemList, -1));
-    });
-});
-
-  
+	  });
