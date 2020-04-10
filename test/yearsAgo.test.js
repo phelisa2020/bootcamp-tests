@@ -1,11 +1,12 @@
 describe('yearsAgo' , function(){
-    it('it should return how many years ago that was' , function(){
+    it('should say in 2000 that was 20 years ago' , function(){
     	 var year = new Date().getFullYear()-year;
       assert.equal(2000, yearsAgo(20));
     });
 
-    it('it should return how many years ago that was (if it was last year) ' , function(){
+    it('should say in 2019 that was 1 year ago ' , function(){
     	 var year = new Date().getFullYear()-year;
       assert.equal(2019, yearsAgo(1));
     });
 });
+
