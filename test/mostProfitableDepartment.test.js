@@ -1,11 +1,15 @@
 describe('mostProfitableDepartment' , function(){
-    it('should return outdoor department with high sales of 18007 ' , function(){ 
-    	var outdoor = ''
-      assert.equal(outdoor, mostProfitableDepartment(18007));
+    it('should return -1 when the most profitable department is not present' , function(){ 
+    	
+      assert.equal([
+    'hardware,outdoor,carpentry, hardware, outdoor,carpentry,hardware, outdoor,carpentry,hardware, outdoor,carpentry,hardware,outdoor,carpentry',
+].indexOf(20), -1);
     });
-       it('should return electronics department with high sales of 16109' , function(){
-       		var electronics = ''
-      assert.equal(electronics, mostProfitableDepartment(16109));
+       it('should return hardware for the first most profitable department', function(){
+       		
+      assert.equal(mostProfitableDepartment(([
+    'hardware,outdoor,carpentry, hardware, outdoor,carpentry,hardware, outdoor,carpentry,hardware, outdoor,carpentry,hardware,outdoor,carpentry',
+]),'hardware'), 0 );
     });
        
 });
